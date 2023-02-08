@@ -1,0 +1,17 @@
+create database estoque_api;
+
+create table produtos (
+    id int auto_increment primary key,
+    img varchar(300) null,
+    codigo varchar(300) not null,
+    nome varchar(80) not null,
+    detalhe Text null,
+    quantidade int null,
+    serie varchar(10) null,
+    valor float not null,
+    fornecedor varchar(50) null,
+    status varchar(10) null,
+    data_inicio varchar(20) null,
+    data_atualizada varchar(20) null,
+    inativo int null
+)
